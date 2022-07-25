@@ -119,6 +119,7 @@ Content accross the course in different courses and modules are mostly .md and .
 - [Course 6 - Machine_Learning_II](Course_6-Machine_Learning_II)
   - [Module 1 - Decision Trees](Course_6-Machine_Learning_II/Module_1-Decision_Trees)
       - [Introduction to Decision Trees](Course_6-Machine_Learning_II/Module_1-Decision_Trees/1-Introduction_to_Decision_Trees)
+      - [Implementing Decision Trees](Course_6-Machine_Learning_II/Module_1-Decision_Trees/1-Introduction_to_Decision_Trees/2-Implementing_Decision_Trees)
 - [Docs](Docs)
   - [Amazon Web Services](Docs/AWS)
   - [Course Overview](Docs/Course_Overview)
