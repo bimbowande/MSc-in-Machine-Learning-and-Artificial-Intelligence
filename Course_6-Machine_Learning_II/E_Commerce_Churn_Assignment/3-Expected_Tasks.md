@@ -29,11 +29,9 @@ The following document describes all the steps required to launch the instance w
 
 Download [EC2-Instance-Launch](Docs/Amazon_Web_Services/EC2_Instance_Launch.pdf)
 
-Once you have the instance ready, you will find the data in the instance under the '**inputdata'** folder. You can check the directory using the `ls` command after launching the instance. Therefore, you must not load the data again. However, you must upload the notebooks from the link provided below.
+Once you have the instance ready, you will find the data in the instance under the '**inputdata**' folder. You can check the directory using the `ls` command after launching the instance. Therefore, you must not load the data again. However, you must upload the notebooks from the link provided below.
 
-Jupyter Notebooks
-
-Download
+Download [Jupyter Notebooks](Starter_Notebooks.zip)
 
 Moreover, to optimise the process in Spark, you must follow the steps mentioned below.
 
