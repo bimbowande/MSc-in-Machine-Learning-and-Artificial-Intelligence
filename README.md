@@ -124,6 +124,7 @@ Content accross the course in different courses and modules are mostly .md and .
     - [Ensemble Learning With Random Forest](Course_6-Machine_Learning_II/Module_2-Ensembles_and_Random_Forest/1-Ensemble_Learning_With_Random_Forest)
     - [Implementation of Random Forest](Course_6-Machine_Learning_II/Module_2-Ensembles_and_Random_Forest/2-Implementation_of_Random_Forest)
     - [Random Forest in Spark](Course_6-Machine_Learning_II/Module_2-Ensembles_and_Random_Forest/3-Random_Forest_in_Spark)
+  - [Module 3 - E-Commerce Churn Case Study](Course_6-Machine_Learning_II/Module_3-E_Commerce_Churn_Case_Study)
 - [Docs](Docs)
   - [Amazon Web Services](Docs/AWS)
   - [Course Overview](Docs/Course_Overview)
