@@ -49,7 +49,7 @@ What will be the change of basis matrix if you convert any location point which 
 
 - $\begin{bmatrix}1&1\\1&-2\end{bmatrix}^{-1}$
 
-Ans: B. *This option is correct. Suppose there is point ‘v’ (a, b) in B2 basis and if you change the basis of ‘v’ into B1 and get (1, 2) in B1, then the linear equation for the basis change will be:*
+Ans: B. Suppose there is point ‘v’ (a, b) in B2 basis and if you change the basis of ‘v’ into B1 and get (1, 2) in B1, then the linear equation for the basis change will be:*
 $$\begin{bmatrix}1\\2\end{bmatrix}=a\begin{bmatrix}1\\-2\end{bmatrix}+b\begin{bmatrix}1\\1\end{bmatrix}$$
 *Now, to get the (a, b), you have to manipulate this equation. And if you do so, you will get the following equation.*
 $$\begin{bmatrix}1&1\\-2&1\end{bmatrix}^{-1}*\begin{bmatrix}1\\2\end{bmatrix}=\begin{bmatrix}a\\b\end{bmatrix}$$
@@ -66,7 +66,7 @@ Qn: You want to tell the alien about the planet Saturn. To share the location of
 - $\begin{bmatrix}-1\\26\end{bmatrix}$
 
 Ans: D. *You can multiply by the matrix.*
-$$\begin{bmatrix}1&1\\-2&1\end{bmatrix}^{-1}*\begin{bmatrix}1\\2\end{bmatrix}=\begin{bmatrix}-1\\26\end{bmatrix}$$
+$$\begin{bmatrix}1&1\\-2&1\end{bmatrix}^{-1}*\begin{bmatrix}25\\28\end{bmatrix}=\begin{bmatrix}-1\\26\end{bmatrix}$$
 
 #### Position of Kappa
 
