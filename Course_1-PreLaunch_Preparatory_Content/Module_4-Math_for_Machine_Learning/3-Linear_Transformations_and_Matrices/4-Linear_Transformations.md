@@ -11,11 +11,21 @@ Geometrically, a transformation can be visualised as the **distortion of the n-d
 1. Straight lines remain straight and parallel to each other
 2. The origin remains fixed
 
-Let's consider a linear transformation where the original basis vectors ^i, ^j move to the following points: ![Example](https://i.ibb.co/4jPzY5t/Matrix-14.png) This means that ^i moves to (2, 0) (from (1, 0) earlier) and ^j stays at (0, 1) in the linear transformation. Try visualising this transformation and see what kind of distortion this involves - does it involve rotation of the 2d space, 'stretching' space in some direction, etc? This transformation simply stretches the space in the x-direction by two units.
+Let's consider a linear transformation where the original basis vectors $\hat{i}$, $\hat{j}$ move to the following points: 
+$$\large{\hat{i}_{new}=\begin{bmatrix}2\\0\end{bmatrix},\ \hat{j}_{new}=\begin{bmatrix}0\\1\end{bmatrix}}$$
+This means that ^i moves to (2, 0) (from (1, 0) earlier) and ^j stays at (0, 1) in the linear transformation. Try visualising this transformation and see what kind of distortion this involves - does it involve rotation of the 2d space, 'stretching' space in some direction, etc? This transformation simply stretches the space in the x-direction by two units.
 
-Now, here is the most important idea of this section - we can combine the two vectors where ^i and ^j land and write them as a single matrix. Each of these vectors forms one column of the matrix (and hence are often called **column vectors**). ![enter image description here](https://i.ibb.co/84jLDyb/Matrix-15.png) This matrix fully represents the linear transformation. If you want to find where *any* given vector v lands after this transformation, you simply multiply the vector with the matrix: ![enter image description here](https://i.ibb.co/7G6fw4B/Matrix-16.png) It is convenient to **think of this matrix as a function** which describes the transformation - it takes the original vector v as the input and returns the new vector vnew.
+Now, here is the most important idea of this section - we can combine the two vectors where ^i and ^j land and write them as a single matrix. Each of these vectors forms one column of the matrix (and hence are often called **column vectors**).
+$$\large{L=\begin{bmatrix}2&0\\0&1\end{bmatrix}}$$
+This matrix fully represents the linear transformation. If you want to find where *any* given vector v lands after this transformation, you simply multiply the vector with the matrix: 
+$$\large{v_{new}=Lv}$$
+It is convenient to **think of this matrix as a function** which describes the transformation - it takes the original vector v as the input and returns the new vector vnew.
 
-Now that we have looked at linear transformations intuitively, it will be easy to study them formally. Formally, a transformation is linear if satisfies two properties. If L is a linear transformation (i.e. a matrix), and v and w are two vectors, then: ![Linear Transformations](https://i.ibb.co/wN9SY0s/Matrix-17.png) Using the intuition of linear transformations that you now have, think about (i.e. visualise) why these two properties should be true.
+Now that we have looked at linear transformations intuitively, it will be easy to study them formally. Formally, a transformation is linear if satisfies two properties. If L is a linear transformation (i.e. a matrix), and v and w are two vectors, then: 
+1. $L(v+w)=L(v)+L(w)$ (called additivity or distributivity)
+2. $L(cv)=cL(v)$, where c is a scalar (called homogeneity or addociativity) 
+
+Using the intuition of linear transformations that you now have, think about (i.e. visualise) why these two properties should be true.
 
 Matrix Multiplication: Composition of Linear Transforms**
 
@@ -23,18 +33,48 @@ Now that you know that a matrix represents a linear transformation, let's unders
 
 #### Vector Positions from Describing Rotation
 
-Qn: Consider a linear transformation. In this transformation, the coordinate system is rotated counter-clockwise by 90°. What are the new locations of basis vectors ^i and ^j?
-Ans: Try visualising a 90 degree counter-clockwise rotation, and imagine the points at which ^inew and ^jnew will fall. ![enter image description here](https://i.ibb.co/b6XYdNm/Matrix-18.png)
+Qn: Consider a linear transformation. In this transformation, the coordinate system is rotated counter-clockwise by 90°. What are the new locations of basis vectors $\hat{i}$ and $\hat{j}$?
+
+- $\hat{i}_{new}=\begin{bmatrix}1\\1\end{bmatrix},\ \hat{j}_{new}=\begin{bmatrix}-1\\0\end{bmatrix}$
+
+- $\hat{i}_{new}=\begin{bmatrix}0\\-1\end{bmatrix},\ \hat{j}_{new}=\begin{bmatrix}-1\\0\end{bmatrix}$
+
+- $\hat{i}_{new}=\begin{bmatrix}0\\-1\end{bmatrix},\ \hat{j}_{new}=\begin{bmatrix}1\\0\end{bmatrix}$
+
+- $\hat{i}_{new}=\begin{bmatrix}0\\1\end{bmatrix},\ \hat{j}_{new}=\begin{bmatrix}-1\\0\end{bmatrix}$
+
+Ans: D. *Try visualising a 90 degree counter-clockwise rotation, and imagine the points at which $\hat{i}_{new}$ and $\hat{j}_{new}$ will fall.* 
+$$\large{\hat{i}_{new}=\begin{bmatrix}0\\1\end{bmatrix},\ \hat{j}_{new}=\begin{bmatrix}-1\\0\end{bmatrix}}$$
 
 #### Describing Rotation from Vector Positions
 
-Qn: Now let's try the reverse of the previous question. Consider the following positions of basis vectors: ![enter image description here](https://i.ibb.co/5G5fkHj/Matrix-19.png) Which of the following rotations do these positions represent?
-Ans: 135° clockwise. ^i is at 45° in the 3rd quadrant, and ^j is at 45° in the 4th quadrant. This requires 90° + 45° of rotation.
+Qn: Now let's try the reverse of the previous question. Consider the following positions of basis vectors: 
+$$\large{\hat{i}_{new}=\begin{bmatrix}-1/\sqrt{2}\\-1/\sqrt{2}\end{bmatrix},\ \hat{j}_{new}=\begin{bmatrix}1/\sqrt{2}\\-1/\sqrt{2}\end{bmatrix}}$$
+Which of the following rotations do these positions represent?
+
+- 90° counter-clockwise
+
+- 135° clockwise
+
+- 135° counter-clockwise
+
+- 45° clockwise
+
+Ans: B. *135° clockwise. $\hat{i}$ is at 45° in the 3rd quadrant, and $\hat{j}$ is at 45° in the 4th quadrant. This requires 90° + 45° of rotation.*
 
 #### Shearing
 
 Qn: You saw the transformation "shearing" in the video. Which of these matrices describe shearing?  
-Ans: The →j vector moves to (1,1). Imagine the rectangle described by the basis vectors "sheared", that is, the top of it moves while its base remains the same. ![enter image description here](https://i.ibb.co/mRj0fk3/Matrix-20.png)
+
+- $\begin{bmatrix}1&0\\0&1\end{bmatrix}$
+
+- $\begin{bmatrix}1&0\\0&3\end{bmatrix}$
+
+- $\begin{bmatrix}0&1\\1&1\end{bmatrix}$
+
+- $\begin{bmatrix}0&-1\\1&0\end{bmatrix}$
+
+Ans: The →j vector moves to (1,1). Imagine the rectangle described by the basis vectors "sheared", that is, the top of it moves while its base remains the same. $\begin{bmatrix}0&1\\1&1\end{bmatrix}$
 
 #### Composite Transformation
 
@@ -42,13 +82,20 @@ Qn: We can also apply multiple linear transformations one after the other. For e
 
 Mathematically, if you imagine these transformations being applied to a vector v, then the final vector would be:
 
-vfinal=CBAv. That is, you apply A to v to get the matrix Av, then apply B to Av, and so on to get CBAv.
+$v_{final}=CBAv$. That is, you apply $A$ to $v$ to get the matrix $Av$, then apply $B$ to $Av$, and so on to get $CBAv$.
 
 Now, you can write the matrix product CBA as another matrix L, i.e. L=CBA. L represents the three transformations done one after the other. In other words, the matrix L=CBA is the **composite transformation matrix** - doing the three consecutive transformations is equivalent to the single transformation L.
 
-You already know the matrices corresponding to the operations described above: rotate the space 90 degrees counter-clockwise (A), then 'shear' it in positive direction (B), and then rotate it back again 90 degrees clock-wise (C). What is the composite matrix L? Hint: The shear matrix is: ![Shear matrix](https://i.ibb.co/tqqqGGJ/Matrix-21.png)
+You already know the matrices corresponding to the operations described above: rotate the space 90 degrees counter-clockwise (A), then 'shear' it in positive direction (B), and then rotate it back again 90 degrees clock-wise (C). What is the composite matrix L? Hint: The shear matrix is: $B=\begin{bmatrix}0&1\\1&1\end{bmatrix}$
 
-Ans: The product ![enter image description here](https://i.ibb.co/Fqm4bKR/Matrix-23.png) You can also imagine the transformations in sequence and see that the vectors ^i and ^j end up at (1, -1) and (0, 1) respectively. ![enter image description here](https://i.ibb.co/2WSFmTP/Matrix-22.png)
+- $L=\begin{bmatrix}1&0\\-1&1\end{bmatrix}$
+
+- $L=\begin{bmatrix}1&-1\\1&1\end{bmatrix}$
+
+- $L=\begin{bmatrix}-1&0\\1&-1\end{bmatrix}$
+
+
+Ans: A. *The product $CBA=\begin{bmatrix}0&1\\-1&0\end{bmatrix}\begin{bmatrix}1&1\\0&1\end{bmatrix}\begin{bmatrix}0&-1\\1&0\end{bmatrix}=\begin{bmatrix}0&1\\-1&0\end{bmatrix}\begin{bmatrix}1&-1\\1&0\end{bmatrix}=\begin{bmatrix}1&0\\-1&1\end{bmatrix}$. You can also imagine the transformations in sequence and see that the vectors ^i and ^j end up at (1, -1) and (0, 1) respectively. $L=\begin{bmatrix}1&0\\-1&1\end{bmatrix}$.*
 
 ### Linear Transformation - Shearing Matrix
 

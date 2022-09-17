@@ -2,41 +2,30 @@
 
 You have already looked at two basic operations that can be performed on vectors - adding two vectors and multiplying a vector by a scalar. In this segment, you will learn a commonly used vector operation - the **dot product** of two vectors.
 
-## **Multiplying Vectors: The Dot Product**
+## Multiplying Vectors: The Dot Product
 
 ## Video
 
 [The following video](https://www.youtube.com/watch?v=WNuIhXo39_k&list=RDQMAXXUrRt9-Uw&start_radio=1) by Khan Academy explains the dot product operation. If you are familiar with the concept, you can skip the video and move ahead - the important ideas are summarised below.
 
 The dot product of two vectors returns a **scalar quantity**. For two vectors
-
-X=[x1x2],Y=[y1y2]
-
+$$\large{X=\begin{bmatrix}x_1\\x_2\end{bmatrix},\ Y=\begin{bmatrix}y_1\\y_2\end{bmatrix}}$$
 Note that we have represented the vectors vertically (as **column vectors).** Though one can also represent them horizontally, conventionally they are represented as column vectors by default.
 
 The dot product is defined as **the element-wise product** of the two vectors, i.e.:
-
-X.Y=x1∗y1+x2∗y2
-
+$$\large{X*Y=x_1∗y_1+x_2∗y_2}$$
 For example, if we have the following two vectors:
-
-A=[12],B=[615]
-
+$$\large{A=\begin{bmatrix}1\\2\end{bmatrix},\ B=\begin{bmatrix}6\\15\end{bmatrix}}$$
 Then the dot product (A . B) is given by:
-
-A.B=1∗6+2∗15=36
-
-## **Geometric Interpretation of the Dot Product**
+$$A*B=1∗6+2∗15=36$$
+## Geometric Interpretation of the Dot Product
 
 The dot product has a very nice geometric interpretation. To understand that, we'll need to shift our perspective to that of a 'physics student' and see vectors as arrows in 2D or 3D space.  
 
 Say you have two vectors a and b and the angle between them is θ. The dot product between the vectors is given by the following expression where ||a|| and ||b|| represent the magnitudes of the two vectors:
-
-dot(a,b)=||a||∗||b||∗cos(θ)
+$$\large{dot(a,b)=||a||∗||b||∗cos(θ)}$$
 
 ![Vector Dot Product](https://i.ibb.co/MBgDxkj/Vector-Dot-Product.png)
-
-Vector Dot Product
 
 ## Video
 
@@ -45,8 +34,7 @@ We'll not get into the details of proving the above expression, though you can [
 ## Example
 
 The important point for us is that the dot product can be used to compute the **angle between two vectors**. For example, if you have two vectors a=[1,1] and b=[1,0] , the angle between the vectors is:
-
-cos(θ)=a.b||a|| ||b||=1.1+1.0√2√1=1√2
+$$\large{cos(θ)=\dfrac{a*b}{||a||*||b||}=\dfrac{1.1+1.0}{\sqrt{2}*\sqrt{1}}=\dfrac{1}{\sqrt{2}}}$$
 
 We know that cos(θ)=1√2 corresponds to θ=45 degrees. Similarly, you can calculate the angle between any two vectors. Note that although we have taken an example of 2D vectors, this is applicable to vectors in any n-dimensional space.  
 

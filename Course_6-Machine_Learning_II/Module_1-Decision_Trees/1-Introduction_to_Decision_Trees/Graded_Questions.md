@@ -48,7 +48,10 @@ Ans: C. *If the applicant's age was 52 years, the model would check the average 
 
 Let’s take another look at the artificial data set and answer the questions based on the data provided. The table shown below shows the number of individuals that play or do not play football based on their Gender and Age. Take a look at the table below:
 
-![Problem Statement 2](https://i.ibb.co/ZhwSX6Q/Problem-Statement-2.png)
+| Gender/Age | Age < 50          | Age > 50          |
+|------------|-------------------|-------------------|
+| Female     | P - 10<br>N - 390 | P - 0<br>N - 100  |
+| Male       | P - 250<br>N - 50 | P - 50<br>N - 150 |
 
 where,   
 P implies ‘plays football’ - class A = label 1.  

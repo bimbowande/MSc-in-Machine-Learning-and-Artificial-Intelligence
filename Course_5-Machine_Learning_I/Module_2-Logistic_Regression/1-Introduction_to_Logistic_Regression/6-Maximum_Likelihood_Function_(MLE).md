@@ -35,21 +35,21 @@ But before you do that, the likelihood function needs to be simplified further. 
 **VIDEO**
 
 As stated by Jaidev, since all the _n_ data points are independent of each other, the likelihood of each data point's output, yi equal to the actual label, and can be multiplied with each other. Therefore, you get the likelihood function for the data set as follows:
-$$P(y)=\prod^n_{i=1}p(y=y_i)$$
+$$\large{P(y)=\prod^n_{i=1}p(y=y_i)}$$
 Here, p(y=y1) is given by the following: 
-$$p(y=yi)=p^{y_i}_i*(1−p_i)^{(1−y_i)}$$
+$$\large{p(y=yi)=p^{y_i}_i*(1−p_i)^{(1−y_i)}}$$
 So, by substitution, you get:
-$$P(y)=\prod^n_{i=1}p^{y_i}_i×(1−p_i)$(1−y_i)$$
+$$\large{P(y)=\prod^n_{i=1}p^{y_i}_i×(1−p_i)$(1−y_i)}$$
 To simplify this equation, take the log of both sides. Taking the logarithm of the likelihood function gives the log-likelihood function, which converts the multiplication of the terms for different observations to addition. But does taking the log change the function? The answer is no. 
 
 The trend of the data points stays the same. Consider a function $y=x^2$ for a non-negative x, i.e., x >= 0; the minima of this function will be at x = 0. Now, on taking log of both sides, $log y = 2log(x)$, the minima will still be at 0. This happens because the log is a monotonically increasing function; if $x > y$, then $log\ x > log\ y$. So, if you find an x that gives the smallest value of y, then log y will also be the smallest at that value. 
 
 By taking the log of the equation for P(y), you get: 
-$$log(P(y))=\sum^n_{i=1}log(p^{y_i}_i*(1−p_i)^{(1−yi)})=\sum^n_{i=1}log(p^{y_i}_i)+\sum^n_{i=1}log(1−p_i)^{(1−y_i)}$$
+$$\large{log(P(y))=\sum^n_{i=1}log(p^{y_i}_i*(1−p_i)^{(1−yi)})=\sum^n_{i=1}log(p^{y_i}_i)+\sum^n_{i=1}log(1−p_i)^{(1−y_i)}}$$
 
 So, the log-likelihood function is given by the following equation:
-$$P(y:p)=\sum^n_{i=1}y_ilog(p_i)+(1−y_i)log(1−p_i)$$
-Note that we have used P(y:p) instead of P(y) in the expression above for the log-likelihood function. P(y:p) is read as the log-likelihood of the variable y, given the parameter p. This process is also known as the **Maximum Likelihood Estimation** (MLE).
+$$\large{P(y:p)=\sum^n_{i=1}y_ilog(p_i)+(1−y_i)log(1−p_i)}$$
+Note that we have used $P(y:p)$ instead of $P(y)$ in the expression above for the log-likelihood function. $P(y:p)$ is read as the log-likelihood of the variable y, given the parameter p. This process is also known as the **Maximum Likelihood Estimation** (MLE).
 
 In the next video, you will learn how to maximise this function by minimising the log loss function.
 

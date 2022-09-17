@@ -22,7 +22,7 @@ The following questions will help you verify your understanding of these concept
 
 #### Vector Span
 
-Qn: What will be the span of the vectors 3→i and −7→i
+Qn: What will be the span of the vectors $3\ \overrightarrow{i}$ and $−7\ \overrightarrow{i}$
 
 - The x -y plane
 

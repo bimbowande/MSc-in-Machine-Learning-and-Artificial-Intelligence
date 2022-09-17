@@ -34,7 +34,6 @@ Can a simple straight line be used to classify data? Well, using a straight line
 1.  It can be used to predict probabilities.
 2.  It is continuous and differentiable. 
 3.  It also gives low probabilities of datapoints being close to 0 and high probabilities of datapoints being close to 1.  
-     
 
 Although a straight line has properties that make it a suitable classifier, it also has certain properties that are not ideal for a classification function. In the coming video, you will understand why a straight line cannot be used as a classification function.
 
@@ -47,7 +46,6 @@ Can a simple straight line be used to classify data? Well, using a straight line
 1.  It can be used to predict probabilities.
 2.  It is continuous and differentiable. 
 3.  It also gives low probabilities of datapoints being close to 0 and high probabilities of datapoints being close to 1.  
-     
 
 Although a straight line has properties that make it a suitable classifier, it also has certain properties that are not ideal for a classification function. In the coming video, you will understand why a straight line cannot be used as a classification function.
 
@@ -123,7 +121,6 @@ Ans: A, C & D.
 Qn: The equation given below represents a model used to predict whether a child is likely to choose commerce as their major in high school. The features of the model are x1 =  marks in class 10th (use percentage value directly; e.g., for 60% marks, use 60), x2 = a boolean value denoting whether some family member is a CA.  
 $p=\dfrac{1}{1+e^{−(0.005x_1+0.5x_2)}}$
 
-  
 For a child who has scored 80% marks in class 10th and has an elder brother who is a CA, find the probability of the child opting for commerce.
 
 - 0.66

@@ -6,10 +6,6 @@ In the first module of the program, **Introduction to Machine Learning**, you u
 
 After understanding this, you also looked at a few important classes of machine learning algorithms under **supervised and unsupervised learning**. You have now understood that if you are looking to predict a continuous value, you use a regression algorithm. On the other hand, if you are looking to predict a discrete value, you use a classification algorithm. For a quick refresher around this concept, you can refer to the Supervised Learning Algorithms segment in the Introduction to Machine Learning module.
 
-Question 1/2
-
-Mandatory
-
 #### Supervised and Unsupervised Learning
 
 Qn: Identify the type of problem here: Consider a large data set of the medical profiles of cancer patients with no labels. The model has to learn whether there are different groups of such patients for whom separate treatments may be tailored.

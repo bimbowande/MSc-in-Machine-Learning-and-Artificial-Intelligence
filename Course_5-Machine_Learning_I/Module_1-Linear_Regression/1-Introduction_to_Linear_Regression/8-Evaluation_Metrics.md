@@ -7,9 +7,7 @@ Before answering this, let’s look at the image given below and understand it b
 ![Evaluationetrics Graph 1](https://i.ibb.co/qgNbvM6/Evaluationetrics-Graph-1.png)
 
 Here, $(x_i, y_i)$ represents your data point. $\hat{y}$ represented the predicted value in the case of $(x_i, y_i)$. The sum of squared errors (SSE) or residual sum of squares (RSS) will be $\sum{(y_i−\hat{y})^2}$. This sum of squares defined the variance of the residuals.
-
-$RSS = \sum{(y_i−\hat{y})^2}$
-
+$$\large RSS = \sum{(y_i−\hat{y})^2}$$
 The strength of this line should be defined around this RSS because it is this value/ objective function that you need to minimise. So, for any two given lines or linear models, you can check this value and decide which model is better.
 
 #### Residual Sum of Squares
@@ -24,7 +22,7 @@ Qn: Consider an example of marketing spend (in lakh rupees) and sales amount (in
 
 Ans: A. *The RSS for any regression line is given by the expression* 
 
-*$\sum(y_i−\hat{y})^2$: RSS is the sum of the squared difference between the actual and the predicted values, and its value will change if the units change, as it has units of $y_2$. For example, $(₹140−₹70)^2$ = 4,900, whereas $(USD2−USD1)^2$ = 1. So, the value of RSS is different when the units are changed.*
+*$\sum(y_i−\hat{y})^2$: RSS is the sum of the squared difference between the actual and the predicted values, and its value will change if the units change, as it has units of $y_2$. For example, (₹140−₹70)$^2$ = 4,900, whereas $(USD2−USD1)^2$ = 1. So, the value of RSS is different when the units are changed.*
 
 If you remember from our statistics discussion, the variance in a variable is calculated by $\sum(y_i−\bar{y})^2/n$. This is the maximum variation in the model. Now, why do we say that? This is because the most simplistic or trivial linear regression model that you can build on a set of data points is a line that passes through the mean of all the target values, y. Essentially, this is $y = \bar{y}$. Hence, any other model that you build should be better than this. Now for $y = \bar{y}$  , $RSS = \sum(y_i−\bar{y})^2$. We define this as the total sum of squares which is the RSS of the most trivial model, which essentially captures the maximum variation in the data.
 
@@ -32,10 +30,8 @@ Hence, the total sum of squares (Total/ Maximum variation in the data) $TSS = �
 
 Now, consider the model $y = \hat{y}$ in the above diagram. This is a linear model that tries to fit the data better than the trivial model $y=\bar{y}$. For this model, $RSS = \sum(y_i−\hat{y})^2$.
 
-With these concepts in mind, we define one of the commonly used evaluation metrics R2 as
-
-$R^2=\dfrac{TSS−RSS}{TSS}=1−\dfrac{RSS}{TSS}$
-
+With these concepts in mind, we define one of the commonly used evaluation metrics $R^2$ as
+$$\large R^2=\dfrac{TSS−RSS}{TSS}=1−\dfrac{RSS}{TSS}$$
 Now, let’s try to understand $R^2$. The Total sum of squares (TSS) is a measure of the total/maximum variation in the data. If you look at the image at the start of the segment, you will notice that $TSS - RSS$ is an indicative measure of the total variation captured by the model $y=\hat{y}$ . Hence, $R^2$ is a measure of the ratio of the total variation captured by the model divided by the total variation present in the data. If $\hat{y}$ in the model $y=\hat{y}$ becomes $\bar{y}$, then $RSS = TSS$, and hence, $R^2 = 0$. And if $\bar{y}$ in the model $y=\hat{y}$ becomes such that $\hat{y_i}=y_i$ for all i, then $RSS = 0$ and $R^2 = 1$. Hence, for the perfect model, $R^2$ is 1. 
 
 With these points, you would have realised that as R2 increases, the model fit improves.
@@ -48,7 +44,7 @@ The coefficient of determination or $R^2$ determines how well a model captures
 
 $R^2$ should be the go-to metric for prediction, but there are few issues in using $R^2$.
 
-The number of predictor variables associated with y should also be considered in our calculations. It is for this reason that the adjusted r squared value is defined. 
+The number of predictor variables associated with $y$ should also be considered in our calculations. It is for this reason that the adjusted r squared value is defined. 
 
   > $Adjusted\ R^2=1−\dfrac{(1−R^2)(N−1)}{N−p−1}$
 

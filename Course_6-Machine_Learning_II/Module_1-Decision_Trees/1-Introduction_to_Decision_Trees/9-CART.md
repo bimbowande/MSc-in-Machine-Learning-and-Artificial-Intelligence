@@ -11,9 +11,7 @@ You have already studied the method of measuring purity in the case of both Regr
 **VIDEO**
 
 The criteria for splitting in the case of CART is the Gini index. Gini index measures the number of times a random variable is incorrectly identified. It is calculated as follows:
-
-$$Gini=1−\sum^n_{i=1}(p_i)^2$$
-
+$$\large{Gini=1−\sum^n_{i=1}(p_i)^2}$$
 where pi stands for the probability of the classes within variable under consideration.
 
 #### Gini Index
@@ -80,7 +78,22 @@ Just as you calculated entropy in case of classification problem, calculate the 
 
 Qn: Given that you are working with CART algorithm and want to split the node "Symptoms". So you decide to split it on the basis of "Breathing Problem" and "Fever+Cough". Calculate the total weight Gini Index value. (Choose the option nearest to your answer)
 
-![](https://images.upgrad.com/f99deda8-0961-4101-b033-d4e26a6eaed1-table.png)
+| Sl. No. | Symptoms          | International Travel | Interaction with infected person | Corona Test Result |
+|---------|-------------------|----------------------|----------------------------------|--------------------|
+| 1       | Fever             | More than 14 days    | Without mask                     | No                 |
+| 2       | Fever             | More than 14 days    | With mask                        | No                 |
+| 3       | Breathing Problem | More than 14 days    | Without mask                     | Yes                |
+| 4       | Cough             | More than 14 days    | Without mask                     | Yes                |
+| 5       | Cough             | Less than 14 days    | Without mask                     | Yes                |
+| 6       | Cough             | Less than 14 days    | With mask                        | No                 |
+| 7       | Breathing Problem | Less than 14 days    | With mask                        | Yes                |
+| 8       | Fever             | More than 14 days    | Without mask                     | No                 |
+| 9       | Fever             | Less than 14 days    | Without mask                     | Yes                |
+| 10      | Cough             | Less than 14 days    | Without mask                     | Yes                |
+| 11      | Fever             | Less than 14 days    | With mask                        | Yes                |
+| 12      | Breathing Problem | More than 14 days    | With mask                        | Yes                |
+| 13      | Breathing Problem | Less than 14 days    | Without mask                     | Yes                |
+| 14      | Cough             | More than 14 days    | With mask                        | No                 |![](https://images.upgrad.com/f99deda8-0961-4101-b033-d4e26a6eaed1-table.png)
 
 - 0.43
 
@@ -108,11 +121,9 @@ CART is an algorithm for building decision trees based on the Gini index as a sp
 6.  Compare the Gini impurity across all attributes and select the one which has the minimum Gini.
 
 While dealing with CART, Gini index is the splitting criteria for classification tree or categorical variables but in case of continuous variables, the splitting criteria are MSE(mean squared error). It can be calculated as follows:
-
-MSE=1N∑Ni=1(^Yi−Yi)2
-
+$$\large{MSE=\dfrac{1}{N}\sum^N_{i=1}(\hat{Y}_i−Y_i)^2}$$
 Where N is the number of nodes  
-(^Yi−Yi)2 is the square of the difference between actual and predicted value.
+$(\hat{Y}_i−Y_i)^2$ is the square of the difference between actual and predicted value.
 
 MSE nothing different from variance which is nothing but the square of standard deviation. You have seen this already in the previous segment. You will be calculating it using regression trees in the next session.
 
@@ -128,7 +139,6 @@ Now that you are well aware of both the algorithms: ID3 and CART, let us summari
 4.  Both Entropy and Gini-Index measure the impurity of the variable or the number of times a variable is incorrectly classified. Therefore, our aim while building the tree is to achieve a reduction in these values.
 5.  CART uses MSE/ Variance for continuous variables.
 6.  Standard Deviation is nothing but the square root of MSE value or Variance of a variable.  
-     
 
 ## Additional Links:
 

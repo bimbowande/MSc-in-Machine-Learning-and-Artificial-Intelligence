@@ -67,8 +67,8 @@ Ans: B. *Out of all the attributes, the attribute that results in the maximum in
 
 #### Homogeneity
 
-You already know that one of the most important conditions for splitting is to achieve an improvement in purity/homogeneity. Calculate the impurity of data based on the formula given below:   
-$$Formula:−P(blue)log_2P(blue)−P(yellow)log_2P(yellow)$$
+Qn: You already know that one of the most important conditions for splitting is to achieve an improvement in purity/homogeneity. Calculate the impurity of data based on the formula given below:   
+$$\large{Formula:−P(blue)log_2P(blue)−P(yellow)log_2P(yellow)}$$
 
 Calculate the impurity for this image:
 

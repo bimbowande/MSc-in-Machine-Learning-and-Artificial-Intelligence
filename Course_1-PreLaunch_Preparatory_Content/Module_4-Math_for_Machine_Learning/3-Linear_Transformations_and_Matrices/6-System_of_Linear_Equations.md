@@ -9,19 +9,15 @@ Systems of linear equations are widely studied because they occur in multiple do
 A system of linear equations is a set of linear equations involving the same set of variables.
 
 For example, consider the following three linear equations in three variables x1,x2,x3:
-
-x1+5x2−x3=1
-
-2x1+3x2−2x3=2
-
-−3x1+4x2=0
-
+$$\large{x_1+5x_2−x_3=1}$$
+$$\large{2x_1+3x_2−2x_3=2}$$
+$$\large{−3x_1+4x_2=0}$$
 Solving this system means to find a combination x1,x2,x3 which satisfies all three equations. You can solve this system of equations algebraically (with pen and paper) in a few minutes, but in most practical applications, you have really large sets of equations and variables (e.g. modern deep neural networks involve systems of a few million equations and variables).
 
 Thus, you need to automate the process of solving such systems. Matrices give us a very nifty way to express and solve these equations. The equations above can be rewritten in the matrix form as:
 
-Ax=b, where: ![A, x, b](https://i.ibb.co/yNZnZrv/Matrix-30.png)
-
+$Ax=b$, where:
+$$\large{A=\begin{bmatrix}1&5&1\\2&3&-2\\-3&4&0\end{bmatrix},\ x=\begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix},\ b=\begin{bmatrix}1\\2\\0\end{bmatrix}}$$
 Solving the system of linear equations boils down to solving the matrix equation Ax=b. i.e. finding a vector x which satisfies Ax=b. You may already know that this solution is given by x=A−1b where A−1 is the inverse of the matrix A.
 
 Here we only had three equations and three variables, but you can extend this to any number of equations and variables. Thus, solving a system of equations (no matter how many of them) is reduced to computing the inverse of a matrix and multiplying it by a vector. More importantly, since matrix operations can be parallelised, large systems can be solved in a matter of seconds (Numpy code shown below).
@@ -48,9 +44,16 @@ You will see that the solution x comes out to be [0, 0, −1]. Verify that this 
 #### System of Linear Equations
 
 Qn: Solve the following system of three equations and three unknowns in Numpy and report the solution:
-2x+6y−z=0
-x+2y−2z=1
-−5x+2z=8  
-Ans: [−2, 0.5, −1]
+$$\large{2x+6y−z=0}$$
+$$\large{x+2y−2z=1}$$
+$$\large{−5x+2z=8}$$
+
+- \[−2, 1, −1]
+
+- \[−2, 0.5, −1]
+
+- \[2, 0, −1]
+
+Ans: B.
 
 In the next segment, you will understand what a system of equations represents geometrically and study the concepts of **matrix inverse, rank, column space and null space.**

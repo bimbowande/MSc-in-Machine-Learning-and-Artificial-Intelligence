@@ -1,9 +1,9 @@
 # Gradient Descent Optimization of the Log Loss
 
 In the previous segment, you found the following expression for the derivates. For the log loss of a single data point,
-$$\nabla_wl_i=x_i(\sigma_i-y_i)$$
+$$\large{\nabla_wl_i=x_i(\sigma_i-y_i)}$$
 For the log loss of all the data points,
-$$\nabla_w\hat{L}(y;p)=-\dfrac{1}{n}\sum^n_{i-0}\dfrac{\delta}{\delta{w}}=-\dfrac{1}{n}\sum^n_{i-0}s_i(\sigma_i-y_i)$$
+$$\large{\nabla_w\hat{L}(y;p)=-\dfrac{1}{n}\sum^n_{i-0}\dfrac{\delta}{\delta{w}}=-\dfrac{1}{n}\sum^n_{i-0}s_i(\sigma_i-y_i)}$$
 Let's see how these are used to find the weights of the logistic regression model.
 
 **VIDEO**
@@ -83,19 +83,19 @@ During the gradient descent, the weights calculated in the 20th iteration are $
 Ans: A.
 
 - *Step 1: Calculate the sigmoids of all the given data points.*
-$$\sigma_1=\dfrac{1}{1+e^{−((10*0.04)+(−0.4*−1)+(1*0.4))}}=0.78$$
-$$\sigma_2=\dfrac{1}{1+e^{−((55*0.04)+(0.3*−1)+(0*0.4))}}=0.87$$
-- $Step 2: Calculate the loss for each data point.$   
-$$\nabla_wl_1=\begin{bmatrix}10\\-0.5\\1\end{bmatrix}(0.78-0)=\begin{bmatrix}7.8\\-0.39\\0.78\end{bmatrix}$$
-$$\nabla_wl_1=\begin{bmatrix}55\\0.3\\0\end{bmatrix}(0.87-1)=\begin{bmatrix}-7.15\\-0.039\\0\end{bmatrix}$$
+$$\large{\sigma_1=\dfrac{1}{1+e^{−((10*0.04)+(−0.4*−1)+(1*0.4))}}=0.78}$$
+$$\large{\sigma_2=\dfrac{1}{1+e^{−((55*0.04)+(0.3*−1)+(0*0.4))}}=0.87}$$
+- *Step 2: Calculate the loss for each data point.*   
+$$\large{\nabla_wl_1=\begin{bmatrix}10\\-0.5\\1\end{bmatrix}(0.78-0)=\begin{bmatrix}7.8\\-0.39\\0.78\end{bmatrix}}$$
+$$\large{\nabla_wl_1=\begin{bmatrix}55\\0.3\\0\end{bmatrix}(0.87-1)=\begin{bmatrix}-7.15\\-0.039\\0\end{bmatrix}}$$
 - *Step 3: Find the average loss.*  
-$$\nabla_ql=\frac{1}{2}*(\nabla_wl_1+\nabla_wl_2)=\frac{1}{2}*\begin{bmatrix}0.65\\-0.429\\0.78\end{bmatrix}=\begin{bmatrix}0.325\\-0.2145\\0.39\end{bmatrix}$$
+$$\large{\nabla_ql=\frac{1}{2}*(\nabla_wl_1+\nabla_wl_2)=\frac{1}{2}*\begin{bmatrix}0.65\\-0.429\\0.78\end{bmatrix}=\begin{bmatrix}0.325\\-0.2145\\0.39\end{bmatrix}}$$
 - *Step 4: Find the updated weights.*  
-$$w_{t+1}=w_t-\eta\begin{bmatrix}0.325\\-0.9571\\0.322\end{bmatrix}$$$$w_{21}=\begin{bmatrix}0.04\\-1\\0.4\end{bmatrix}-2\begin{bmatrix}0.325\\-0.2145\\0.39\end{bmatrix}=\begin{bmatrix}-0.025\\-0.9571\\0.322\end{bmatrix}$$
+$$\large{w_{t+1}=w_t-\eta\begin{bmatrix}0.325\\-0.9571\\0.322\end{bmatrix}}$$$$\large{w_{21}=\begin{bmatrix}0.04\\-1\\0.4\end{bmatrix}-2\begin{bmatrix}0.325\\-0.2145\\0.39\end{bmatrix}=\begin{bmatrix}-0.025\\-0.9571\\0.322\end{bmatrix}}$$
 #### Predicting the Class Label
 
-Qn: Using the weights that you found in the earlier question (w1=−0.025;w2=−0.957;w2=0.322), predict the class of a data point with the following features: 
-$$x_1=40;x_2=0.6;x_3=1$$
+Qn: Using the weights that you found in the earlier question $(w_1=−0.025;\ w_2=−0.957;\ w_2=0.322)$, predict the class of a data point with the following features: 
+$$\large{x_1=40;x_2=0.6;x_3=1}$$
 Assume the threshold to be 0.6. 
 
 - 0
@@ -103,7 +103,7 @@ Assume the threshold to be 0.6. 
 - 1
 
 Ans: A. *Step 1: Find the probability of the data point belonging to the positive class.* 
-$$\sigma_1=\dfrac{1}{1+e^{−((40*−0.025)+(0.6*−0.957)+(1*0.322))}}=0.222$$
+$$\large{\sigma_1=\dfrac{1}{1+e^{−((40*−0.025)+(0.6*−0.957)+(1*0.322))}}=0.222}$$
 *The value of $\sigma_1$ is less than the threshold. So, it is classified as 0.
 
 By now, you have learnt about the following: 

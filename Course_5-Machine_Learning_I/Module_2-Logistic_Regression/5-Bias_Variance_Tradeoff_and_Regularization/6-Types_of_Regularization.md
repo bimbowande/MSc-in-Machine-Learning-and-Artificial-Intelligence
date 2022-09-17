@@ -14,9 +14,7 @@ In the next video, you will learn how we can express L1 and L2 regularization ma
 **VIDEO**
 
 In this video, you learned how we can express the L1 and L2 regularization mathematically. Consider the following linear regression model.
-
-$$y=w_0+w_1x_1+w_2x_2+...+w_nx_n$$
-
+$$\large{y=w_0+w_1x_1+w_2x_2+...+w_nx_n}$$
 where,
 
 $y$  is the target variable
@@ -41,9 +39,7 @@ The above function exists in 3d. However, if we want to project any function, f(
 **Source**: _http://gnuplot.sourceforge.net/demo_5.2/contours.html_
 
 This kind of contour plots are frequently used in topological maps to indicate elevations that are the same. For the purpose of explaining the geometrical significance of Ridge and Lasso regression, we have considered the case of a simple linear regression model as shown below.
-
-y=w0+w1x
-
+$$\large{y=w_0+w_1x}$$
 Our weights of interest are w0 and w1. Hence the loss or error function may be represented as follows. The image on the right depicts the 3d plot of the loss function, while the image on the left depicts the corresponding contour plot.
 
 ![Types of regularisation graph 3](https://i.ibb.co/dM5HLvn/Types-of-Regularisation-Graph3.png)
@@ -71,9 +67,7 @@ In the next video, we will learn about the third type of regularization which is
 **VIDEO**
 
 Elastic net regularization is a combination of ridge and lasso regression defined to provide a good balance between reducing overfitting without eliminating too many features from the model. The function is given by:
-
-$$L_{elastic}=Loss+\lambda_2||w||_2+\lambda_1||w||_1$$
-
+$$\large{L_{elastic}=Loss+\lambda_2||w||_2+\lambda_1||w||_1}$$
 In this equation:
 
 -   Set $\lambda_1=0$ for Ridge regression

@@ -13,7 +13,7 @@ In the next video, you will learn how to define a function to find the probabili
 **VIDEO**
 
 As you saw in this video, the probability of obtaining a specific output from an experiment with discrete outputs is called the probability mass function (PMF), or discrete density function. Here, the PMF of getting heads on a coin toss is a Bernoulli distribution given by the following equation: 
-$$f(p:k)=p^k.(1−p)^{(1−k)}$$
+$$\large{f(p:k)=p^k.(1−p)^{(1−k)}}$$
 Here, k can be 0 or 1.
 
 Here, k is the output, and p is the probability of getting heads. If k = 1, i.e., the coin toss results in heads, then k-1 becomes 0. Therefore, the probability of getting heads will be 0.5, given that the coin is a fair coin. This stays the same even if k = 0, i.e., the coin toss results in tails. The distribution works even when the coin is biased. Consider a coin that is 70% biased towards heads. In that case, p = 0.7. Now, if this biased coin toss results in heads, k = 1, the PMF equation will reduce to $(0.7^1∗ 0.3^0) = 0.7$, which is the probability of getting heads. If the coin toss results in tails, i.e., k = 0, the PMF will result in $(0.7^0∗ 0.3^1) = 0.3$, which is the probability of getting tails.  
@@ -29,9 +29,7 @@ In this video, you saw that a binomial random variable is the output of a bino
 A binomial experiment is a series of Bernoulli trials, each trial with binary output. The probability of getting a positive class in each trial should remain the same. The results of all the trials are independent of each other. In other words, the Bernoulli distribution represents the success or failure of a single Bernoulli trial. The Binomial distribution represents the number of successes and failures in _n independent_ Bernoulli trials for a given value of n.
 
 Consider a binomial experiment with n trials and k successes. If each of the trials had a probability of p of getting a favourable outcome, then the overall probability would be given by the following equation:
-
-$$\binom{n}{k})p^k.(1−p)^{(n−k)}$$
-
+$$\large{\binom{n}{k}*p^k*(1−p)^{(n−k)}}$$
 Here, (nk) represents k items picked from n identical items, or nCk. For a coin tossed twice, if you define the success as 'getting heads', you would want to find the probability of the different values: 2 successes (Head, Head), 1 success (Head, Tail), 0 success (Tail, Tail) using the binomial distribution.
 
 Before moving on to the next segment, attempt the questions below to get a better understanding of these distributions.
@@ -49,7 +47,7 @@ Qn: What is the probability of getting 7 heads when a fair coin is tossed 10 tim
 - 30/128
 
 Ans: B. *Use the binomial probability distribution function to solve this. Here, n = 10, k = 7 and p = 0.5.* 
-$$P=\binom{10}{7}0.5^7.(1−0.5)^{(10−7)}=120×0.5^{10}=\dfrac{15}{128}$$
+$$\large{P=\binom{10}{7}0.5^7.(1−0.5)^{(10−7)}=120×0.5^{10}=\dfrac{15}{128}}$$
 
 #### Bernoulli vs Binomial Distribution
 
@@ -78,7 +76,7 @@ Ans: B. *For n trials, the possible number of outputs will be n + 1, with the pr
 *where, 
 			n = total number of trails
 			k = number of successes 
-			p = is the probability of success in a single trial. *
+			p = is the probability of success in a single trial.*
 
 *Now, success in this experiment is defined as getting heads. If a coin is tossed 4 times, the possible number of success are 0 heads, 1 head, 2 heads, 3 heads and 4 heads.*
 

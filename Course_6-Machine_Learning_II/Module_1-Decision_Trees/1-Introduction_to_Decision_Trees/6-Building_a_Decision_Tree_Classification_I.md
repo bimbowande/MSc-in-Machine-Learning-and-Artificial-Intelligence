@@ -29,9 +29,7 @@ The entropy for image 1 is less than that for image 2 as the split in image 1 di
 **VIDEO**
 
 The entropy of a variable in a given class can be calculated using the following formula:
-
-Entropy=∑ci=1−pilog2pi
-
+$$\large{Entropy=\sum^c_{i=1}−}p_ilog_2p_i$$
 Where pi is the probability of the feature/attribute under consideration.
 
 Entropy follows the sum of product (SOP) methodology. As you can see in the formula above, firstly the product of the probability of feature and the logarithmic value of the probability is calculated and then their summation is done for all the features. 
@@ -49,7 +47,7 @@ Try the following questions based on your learning about Entropy:
 
 #### Entropy
 
-Consider a set of variables as shown in the image below such that there are 8 data points from one class represented in Red colour and 8 from another class represented in Green colour:
+Qn: Consider a set of variables as shown in the image below such that there are 8 data points from one class represented in Red colour and 8 from another class represented in Green colour:
 
 ![Entropy Qn](https://i.ibb.co/R0888S7/Entropy-Qn.png)
 
@@ -87,11 +85,11 @@ The data is split into two parts using a linear boundary. Calculate the total en
 
 Ans: B.  *Calculate the entropy as follows:*
 
-$Entropy_{leftsplit}=0\ (all\ variables\ from\ same\ class)$  
-$Entropy_{rightsplit}=−P(green,rightsplit)log_2P(green,rightsplit)−P(red,rightsplit)log_2P(red,rightsplit)$  
+$Entropy_{leftsplit}=0\ (\text{all variables from same class})$  
+$Entropy_{rightsplit}=−P(green,\ rightsplit)log_2P(green,\ rightsplit)−P(red,\ rightsplit)log_2P(red,\ rightsplit)$  
 $Entropy_{rightsplit}=−(8/9)log_2(8/9)−(1/9)log_2(1/9)=0.15+0.35=0.50$
 
-$Entropy{aftersplit}=7/16*0+9/16*0.50=0.281$
+$Entropy_{aftersplit}=7/16*0+9/16*0.50=0.281$
 
 Qn: Consider a set of variables as shown in the image below such that there are 8 data points from one class represented in Red colour and 8 from another class represented in Green colour:
 

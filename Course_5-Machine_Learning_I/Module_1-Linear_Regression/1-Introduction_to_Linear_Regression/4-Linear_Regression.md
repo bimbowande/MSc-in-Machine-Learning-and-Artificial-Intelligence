@@ -25,25 +25,31 @@ Find m and c for the above set of equations.
 
 Ans: A. *Converting the above matrix representation into a set of equations will give 4 = 2m + c and 5 = 3m+c. On solving these equations for m and c, you get m = 1 and c = 2.*
 
-
 In this video, you saw how a system of linear equations can be converted to a [simple matrix](http://numpy.org/doc/stable/reference/generated/numpy.linalg.solve.html) form, which can later be used to identify the unknown variables m and c in the equation. In crude terms, this is the simplest type of linear regression where you are given certain points, or in other words, certain features, with the help of which you try to represent a linear relationship among these features. 
 
 For example, consider the earlier real estate example. Assume that you have values as shown in the table below:
-  
 
-![Real Estate Example](https://i.ibb.co/nRdrDsT/Real-Estate-Example.png)
+| Rooms | Floor | Area (sqft) | Value     |
+|-------|-------|-------------|-----------|
+| 3     | 2     | 1,000       | 10,60,000 |
+| 4     | 5     | 1,500       | 11,05,000 |
+| 2     | 2     | 900         | 10,55,000 |
+| 3     | 10    | 800         | 11,38,000 |
 
 You can represent this data in the table by the equation given below.
-
-$Value = 10,000*Rooms + 10,000*floor + 10* Area + 10,00,000$
-Rel
+$$\large Value = 10,000*Rooms + 10,000*floor + 10* Area + 10,00,000$$
 This representation of the data in the form of a linear relationship involves estimating the coefficient values, here 10,000 for Rooms, 10,000 for floor, and 10 for Area. The process of estimating the values of these coefficients to best predict the dependent variables, here ‘Value’, using a system of linear equations is known as linear regression.
 
 **Is linear regression this simple?**
 
 Usually, data is presented to us in the form of the response and predictor variables as shown below.
 
-![Real Estate Example](https://i.ibb.co/nRdrDsT/Real-Estate-Example.png)
+| Rooms | Floor | Area (sqft) | Value     |
+|-------|-------|-------------|-----------|
+| 3     | 2     | 1,000       | 10,60,000 |
+| 4     | 5     | 1,500       | 11,05,000 |
+| 2     | 2     | 900         | 10,55,000 |
+| 3     | 10    | 800         | 11,38,000 |
 
 For the above table, we were given the coefficients of the equation that perfectly predicts the variable, ‘Value’, given the values of ‘Rooms’, ‘Floor’ and ‘Area’ for all the data points. However, practically, all the data points may not perfectly fit any linear line but can be approximated to fit a certain line as shown in the case below.
 
@@ -51,15 +57,16 @@ For the above table, we were given the coefficients of the equation that perfect
 
 Hence, using the data at hand, we try to find the line that fits the best so that we can predict the response variable with minimum error.
 
-Question 1/1
-
-Mandatory
-
 #### System of Equations
 
 Qn: The data represented here falls under which category of the system of equations?
 
-![System of Equations Question](https://i.ibb.co/CVNkv0w/System-of-Equations-Question.png)
+| Rooms | Floor | Area (sqft) | Value     |
+|-------|-------|-------------|-----------|
+| 3     | 2     | 1,000       | 10,60,000 |
+| 4     | 5     | 1,500       | 11,05,000 |
+| 6     | 4     | 2000        | 21,20,000 |
+| 9     | 6     | 3000        | 31,80,000 |
 
 If you are not clear regarding the system of equations, you can refer to the additional link provided at the end of this segment 
 
