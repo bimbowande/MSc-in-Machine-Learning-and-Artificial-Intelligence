@@ -1,9 +1,7 @@
 # Linear Regression with NumPy
 
 In our previous segment, you understood how the OLS approach works while building a linear regression model. Eventually, the estimates for the coefficient vector turn out to be a series of matrix operations.
-
-$\hat{\beta}=(X^TX)^{−1}X^TY$
-
+$$\Large \hat{\beta}=(X^TX)^{−1}X^TY$$
 In the next video, you will learn how to perform linear regression using the NumPy library. We shall use the results derived above.
 
 Download the notebook used for the below demonstration. 
@@ -12,13 +10,13 @@ Download [Linear Regression using numpy](linear_regression.ipynb)
 
 **VIDEO**
 
-In the notebook, you started by creating a vector of X values and assuming that the linear regression model is of the form y = mx + c. Using this model, y = mx+c, you can predict the values of y by simply substituting the values of X.
+In the notebook, you started by creating a vector of X values and assuming that the linear regression model is of the form $y = mx + c$. Using this model, y = mx+c, you can predict the values of $y$ by simply substituting the values of $X$.
 
-With these X and Y values, when you perform the exercise of building the linear model using the formula of ^β you should end up with the same values of slope and intercept. There is a catch here, which is that if you do not add the constant part to the x vector and assume that the final model is of the form y = mx, you would end up with an m value different from the original value.
+With these $X$ and $Y$ values, when you perform the exercise of building the linear model using the formula of $\hat{β}$ you should end up with the same values of slope and intercept. There is a catch here, which is that if you do not add the constant part to the x vector and assume that the final model is of the form $y = mx$, you would end up with an m value different from the original value.
 
 #### Linear Model
 
-Qn: Assume that you have a linear regression model of the form y = 3.14x + 0.123. Predict the value of yi when xi is 0.4.
+Qn: Assume that you have a linear regression model of the form $y = 3.14x + 0.123$. Predict the value of $y_i$ when $x_i$ is 0.4.
 
 - 1.256
 
@@ -28,7 +26,7 @@ Qn: Assume that you have a linear regression model of the form y = 3.14x + 0.123
 
 - 3.14
 
-Ans: C. *Substituting the values of x in the model would give you predicted values of y.*
+Ans: C. *Substituting the values of $x$ in the model would give you predicted values of $y$.*
 
 Having learnt how to implement linear regression using the numpy library. You can try out a small exercise involving the following steps.
 
@@ -36,7 +34,7 @@ Having learnt how to implement linear regression using the numpy library. You ca
 
 1.  Step 1: Pick a random slope (m) in the interval [0.5, 2]
 2.  Step 2: Pick a random intercept (c) in the interval [0, 1]
-3.  Step 3: Create y = mx + c and add some noise to it, with np.random.randnp.random.ranp.random.ranp.random.ranp.random.ranp.random.ranp.random.ra
+3.  Step 3: Create $y = mx + c$ and add some noise to it, with np.random.randnp.random.ranp.random.ranp.random.ranp.random.ranp.random.ranp.random.ra
 4.  Step 4: Finally find m and c,  and verify your solution
 
 ## Solution

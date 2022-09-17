@@ -112,7 +112,7 @@ Qn: Six fair coins are tossed, what are the odds of getting exactly 4 heads?
 - 15/34
 
 Ans: B. *First, calculate the probability of getting 6 heads out of 4 coin tosses using the binomial distribution. Then find the odds ratio.*
-$$p=^6C_4*(0.5)^4×(1−0.5)^2=\frac{15}{64}$$$$odds=\frac{\frac{15}{64}}{1−\frac{15}{64}}=\frac{15}{49}$$
+$$\large{p=^6C_4*(0.5)^4×(1−0.5)^2=\frac{15}{64}}$$$$\large{odds=\frac{\frac{15}{64}}{1−\frac{15}{64}}=\frac{15}{49}}$$
 #### Classification Function
 
 Qn: Consider a function $p(y|x,w) = g(x,w)$. $g(x)$ is the sigmoid function. If x and w belong to the set of real numbers, then what is the range of values that $p(y)$ will take?
@@ -140,5 +140,5 @@ Qn: A logistic regression model is used to classify 1000 data points into classe
 - 300
 
 Ans: D. *Use prevalence to find the total number of data points that actually belong to class A (Positives).*
-$$prevalence=\frac{TP+FN}{TP+FN+FP+TN}$$$$0.5=\frac{TP+FN}{1000}$$$TP+FN=500$. Now use the total number of data points in class A to find the true positives(Correctly predicted as class A). 
-$$Recall=\frac{TP}{TP+FN}$$$$0.6=\frac{TP}{500}$$$$TP=300$$
+$$\large{Prevalence=\frac{TP+FN}{TP+FN+FP+TN}}$$$$\large{0.5=\frac{TP+FN}{1000}}$$$TP+FN=500$. Now use the total number of data points in class A to find the true positives(Correctly predicted as class A). 
+$$\large{Recall=\frac{TP}{TP+FN}}$$$$\large{0.6=\frac{TP}{500}}$$$$\large{TP=300}$$

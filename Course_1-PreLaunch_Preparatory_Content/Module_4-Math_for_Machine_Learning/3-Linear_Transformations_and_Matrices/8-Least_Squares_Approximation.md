@@ -6,7 +6,13 @@ Note that here we will discuss the idea of least squares approximation only at a
 
 ## Least Squares Approximation
 
-In the previous segment, we saw an example of the following system of equations which did not have a unique solution: ![Matrix-37](https://i.ibb.co/TTkYGzG/Matrix-37.png) If you tried computing the rank of the matrix in Numpy, it would come out to be **rank=2**. You can use the following code to compute the rank:
+In the previous segment, we saw an example of the following system of equations which did not have a unique solution:
+$$\large{2x-y-z=1}$$
+$$\large{2x-y+z=0}$$
+$$\large{4x-2y-3z=-1}$$
+$$\large{Ax=b}$$where:
+$$\large{A=\begin{bmatrix}2&-1&-1\\2&-1&1\\4&-2&-3\end{bmatrix},\ x=\begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix},\ b=\begin{bmatrix}1\\0\\-1\end{bmatrix}}$$
+ If you tried computing the rank of the matrix in Numpy, it would come out to be **rank=2**. You can use the following code to compute the rank:
 
 ```python
 # system of three equations
@@ -22,7 +28,9 @@ Before moving ahead, try to think of some reasons why this system does not have 
 
 #### System of Linear Equations
 
-You saw an example of the following system of equations Ax=b which did not have a unique solution: ![Matrix-38.png](https://i.ibb.co/jDVjtHG/Matrix-38.png) Try to think about why this system is not solvable (in an intuitive manner) - choose an answer and compare your answer with your peers. This is a **poll question.**
+You saw an example of the following system of equations Ax=b which did not have a unique solution: 
+$$A=\begin{bmatrix}2&-1&-1\\2&-1&1\\4&-2&-3\end{bmatrix},\ x=\begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix},\ b=\begin{bmatrix}1\\0\\-1\end{bmatrix}$$
+ Try to think about why this system is not solvable (in an intuitive manner) - choose an answer and compare your answer with your peers. This is a **poll question.**
 
 **Hints**:
 
@@ -40,6 +48,6 @@ But we often come across such systems of equations in the real world, and we wan
 
 You can study least squares approximation from [this Khan Academy video.](https://www.youtube.com/watch?v=MC7l96tW8V8&list=PL39469144F25ACECE&index=3)
 
-To summarise, the least squares approximate solution to the system of equations Ax=b is given by:
-
-![Matrix-39](https://i.ibb.co/fCz2DDr/Matrix-39.png) This is an important and very frequently used technique because, in many real-world phenomena, the matrix A is not invertible. This is because it is usually not a square matrix, i.e. many real-world systems are not represented by square matrices.
+To summarise, the least squares approximate solution to the system of equations $Ax=b$ is given by:
+$$\large{x=(A^TA)^{-1}A^Tb}$$
+This is an important and very frequently used technique because, in many real-world phenomena, the matrix A is not invertible. This is because it is usually not a square matrix, i.e. many real-world systems are not represented by square matrices.

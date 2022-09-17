@@ -54,16 +54,29 @@ Let us learn how to work with Decision Trees for Regression in the next video. R
 
 The process of selection of the root node and the further splitting remains similar to that in the case of categorical decision trees. The only difference is the measure considered to calculate the homogeneity of the system i.e., standard deviation instead of entropy. The feature with maximum reduction in standard deviation before and after splitting is selected as the root node. Take a look at the coronavirus case-study observation table below which now has a continuous target variable. Note that here, all the features are categorical.
 
-![Regression Decision Tree Example Table](https://i.ibb.co/m5njXSc/Regression-Decision-Tree-Example-Table.png)
+| Sl. No. | Symptoms          | International Travel | Interaction with Infected Person | Corona Infection Percentage |
+|---------|-------------------|----------------------|----------------------------------|-----------------------------|
+| 1       | Fever             | More than 14 days    | Without mask                     | 25                          |
+| 2       | Fever             | More than 14 days    | With mask                        | 30                          |
+| 3       | Breathing Problem | More than 14 days    | Without mask                     | 46                          |
+| 4       | Cough             | More than 14 days    | Without mask                     | 45                          |
+| 5       | Cough             | Less than 14 days    | Without mask                     | 52                          |
+| 6       | Cough             | Less than 14 days    | With mask                        | 23                          |
+| 7       | Breathing Problem | Less than 14 days    | With mask                        | 43                          |
+| 8       | Fever             | More than 14 days    | Without mask                     | 35                          |
+| 9       | Fever             | Less than 14 days    | Without mask                     | 38                          |
+| 10      | Cough             | Less than 14 days    | Without mask                     | 46                          |
+| 11      | Fever             | Less than 14 days    | With mask                        | 48                          |
+| 12      | Breathing Problem | More than 14 days    | With mask                        | 52                          |
+| 13      | Breathing Problem | Less than 14 days    | Without mask                     | 44                          |
+| 14      | Cough             | More than 14 days    | With mask                        | 30                          |
 
 Let us now see with the help of the coronavirus case-study example how calculations are done and a solution arrives in the next video.
 
 **VIDEO**
 
 Following is the formula used to calculate standard deviation:
-
-$$S_n=\sqrt{\dfrac{1}{N}\sum^N_{i=1}(x_i−\bar{x})^2}$$
-
+$$\large{S_n=\sqrt{\dfrac{1}{N}\sum^N_{i=1}(x_i−\bar{x})^2}}$$
 where:  
 $N$ is the number of data points,   
 $x_i$ is ith data,   
@@ -76,9 +89,7 @@ This was an example where we had just the continuous target variable and the f
 **VIDEO**
 
 While selecting the splitting value in case of continuous variables, the factor measured is the reduction in variance. The formula is as follows: 
-
-$$\dfrac{\sum{(X−\bar{X})}}{2n}$$
-
+$$\large{\dfrac{\sum{(X−\bar{X})}}{2n}}$$
 As you can see, the variance is simply the square of standard deviation and hence it wouldn’t matter if you use standard deviation. The key thing you need to focus on is how to figure out the splitting value for continuous variables. While working with continuous feature variables, as seen at the start of the segment, sort them in ascending order and then find the midpoint for all the data points. Calculate the reduction in variance before and after the split for each of the midpoints. The one with maximum reduction in variance is selected as the root node. There are other methods to find this split for continuous feature variables which you'll learn in the next session.
 
 Use the above Coronavirus dataset to create a Decision Tree as shown in the steps below and answer the following questions:

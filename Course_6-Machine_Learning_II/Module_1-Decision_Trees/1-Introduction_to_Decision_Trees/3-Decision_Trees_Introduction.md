@@ -4,11 +4,7 @@ In the process of decision analysis, Decision Trees can be used to represent the
 
 A Decision Tree is very similar to how you make decisions in real life: you ask a series of questions to arrive at a decision. A decision tree splits the data into multiple sets. Then, each of these sets is further split into subsets to arrive at a decision.
 
-Let’s hear Sajan explain this to us:
-
-Play Video
-
-3221820
+**VIDEO**
 
 Decision Trees can be considered a set of if-then-else statements. In other words, the process of making decisions is followed by asking questions with two or more possible outcomes. The outcome is decided based on which condition is satisfied. Let us assume that you are in a dilemma of whether or not to go out to buy a cake of soap. How will you arrive at a decision? Let us study this simple Decision Tree example as shown in the image below:
 

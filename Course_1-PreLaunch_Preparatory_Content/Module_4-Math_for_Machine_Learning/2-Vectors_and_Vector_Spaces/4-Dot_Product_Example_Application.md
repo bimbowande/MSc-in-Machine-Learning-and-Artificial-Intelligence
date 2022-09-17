@@ -15,11 +15,8 @@ We'll not build a spam classifier just yet, though let's discuss how we can quan
 Now, we can represent each email as a **vector of 4 dimensions-** the first email is the vector [2,1,0,0], the second email is [0,0,1,1] etc. Each element of the vector represents the frequency of a particular word, so if you imagine a **four-dimensional space** with four axes (each representing the frequency of a word), each email will be a vector in this 4d space.
 
 Now we can use the usual vector operations on emails. For example, the **angle between two emails** will be small if they are similar to each other and large otherwise. The dot product between the first two emails is [2,1,0,0] . [0,0,1,1]  =0, while that between emails 1 and 3 is [2,1,0,0].[1,1,0,0]=3. You know that the angle between two vectors a,b is (taking the example of emails 1 and 3):
-
-cos(θ)=a.b||a|| ||b||=3√5 √2
-
-θ=cos−1(3√5√2)
-
+$$\large{cos(\theta)=\dfrac{a*b}{||a||\ ||b||}=\dfrac{3}{\sqrt{5}*\sqrt{2}}}$$
+$$\theta=cos^{−1}\left(\dfrac{3}{\sqrt{5}*\sqrt{2}}\right)$$
 The angle corresponding to this is θ=18.430. Thus, the angle between emails 1 and 3 is 18.43 degrees.
 
 You can compute cos inverse in Numpy using the function **np.arccos()** (code shown below). It returns the angle in radians, so you can convert it to degrees by multiplying by 180π . You can alternatively use [this online calculator.](https://www.rapidtables.com/calc/math/Arccos_Calculator.html)
@@ -75,10 +72,10 @@ Qn: The frequency table of words in four sample emails is shown below. You want 
 
 Ans: A, C & D
 
-- *The angle between emails 1 and 4 is arccos(3/√5√3)=39.230.*
+- *The angle between emails 1 and 4 is arccos $\left(\dfrac{3}{\sqrt{5}*\sqrt{2}}\right)=39.23\degree$.*
 
-- *The angle between emails 3 and 4 is arccos(2/√2√3)=35.260.*
+- *The angle between emails 3 and 4 is arccos $\left(\dfrac{2}{\sqrt{2}*\sqrt{3}}\right)=35.26\degree$.*
 
-- *The angle between emails 1 and 4 is arccos(3/√5√3)=39.230 while that between 3 and 4 is arccos(2/√2√3)=35.260.*
+- *The angle between emails 1 and 4 is arccos $\left(\dfrac{3}{\sqrt{5}*\sqrt{2}}\right)=39.23\degree$ while that between 3 and 4 is arccos$\left(\dfrac{2}{\sqrt{2}*\sqrt{3}}\right)=35.26\degree$.*
 
 Next, you will study **vector spaces.**

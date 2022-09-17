@@ -4,7 +4,7 @@ Let's now study two commonly used matrix operations - **transpose** and **invers
 
 ## Transposing a Matrix
 
-The **transpose** of a matrix produces a matrix in which the rows and columns are interchanged. For example, the transpose of the matrix ![Transpose of Matrix](https://i.ibb.co/1Gk60g0/Matrix-12.png)
+The **transpose** of a matrix produces a matrix in which the rows and columns are interchanged. For example, the transpose of the matrix $A=\begin{bmatrix}7&0\\2&3\\-1&4\end{bmatrix}$ is $A^T=\begin{bmatrix}7&2&-1\\0&3&4\end{bmatrix}$
 
 Note that the size of the transpose matrix can different from the original matrix, as shown in this example.
 
@@ -25,10 +25,18 @@ print(A.T)
 
 #### Transpose of a Matrix
 
-Consider the following matrix ![X](https://i.ibb.co/Sy21rMP/Matrix-13.png)
-
+Consider the following matrix 
+$$\large{X=\begin{bmatrix}4&2&5\\3&2&8\\5&2&9\\7&2&1\end{bmatrix}}$$
 Qn: Now, consider the matrix U=(X′*X), where X' is the transpose of X. Which of the following dimensions can a matrix A have, if U*A is known to exist?
-Ans: Since X' is a 3 x 4 matrix, U = X'X is a 3 x 3 matrix. For UA to exist, then the number of rows in A should be equal to 3.
+- 3x3
+
+- 5x3
+
+- 5x5
+
+- 3x5
+
+Ans: A & D. *Since X' is a 3 x 4 matrix, U = X'X is a 3 x 3 matrix. For UA to exist, then the number of rows in A should be equal to 3.*
 
 ## **Matrix Inverse**
 

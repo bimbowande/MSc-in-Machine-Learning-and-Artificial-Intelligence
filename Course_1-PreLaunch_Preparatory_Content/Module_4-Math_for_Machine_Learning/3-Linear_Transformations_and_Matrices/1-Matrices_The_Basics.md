@@ -5,9 +5,7 @@ In the last session, you studied the basics of vectors
 We will now move on to **matrices**, a time-tested and powerful type of data structures used to perform numerical computations. First, recall some basics of matrices. Watch [this video courtesy Khan Academy](https://www.youtube.com/watch?v=xyAuNHPsq-g) for a fundamental understanding of matrices, though if you are comfortable with the basics you can skip the video and move ahead.
 
 Briefly, a matrix is a **collection of values stored as rows and columns**. In this module, we will be dealing with matrices with only numerical values.
-
-![Matrix](https://i.ibb.co/nL9600T/Matrix-1.png)
-
+$$\large{A=\begin{bmatrix}2&4&6\\1&5&9\end{bmatrix}}$$
 Let's recall some terms related to a matrix:
 
 - **Rows:** Rows are **horizontal**. The above matrix A has 2 rows. Each row itself is a vector, so they are also called **row vectors.**
@@ -15,9 +13,8 @@ Let's recall some terms related to a matrix:
 - **Entities:** Entities are **individual values** in a matrix. For a given matrix A, value of row i and column j is represented as Ai,j. For example, in the above matrix, A0,2=6 (note that we are using indexing starting from zero to be consistent with the Numpy way).
 - **Dimensions:** The number of rows and columns. For m rows and n columns, the dimensions are **m x n**. The dimensions of the above matrix A are 2 x 3.
 - **Square Matrices:** These are matrices where **the number of rows is equal to the number of columns**. The above matrix A is not a square matrix.
-- **Diagonal Matrices:** These are square matrices where all the off-diagonal elements are zero. For e.g. this is a 3 x 3 diagonal matrix: ![Diagonal Matrix](https://i.ibb.co/WGHXDbt/Matrix-2.png) Note that 'diagonal' refers to the elements Aij where i=j.
-- **Identity Matrices:** These are diagonal matrices where all the diagonal elements are '1'. For e.g. this is a 3 x 3 identity matrix: ![Identity Matrix](https://i.ibb.co/7G37WDQ/Matrix-3.png)
-
+- **Diagonal Matrices:** These are square matrices where all the off-diagonal elements are zero. For e.g. this is a 3 x 3 diagonal matrix: $\large{A=\begin{bmatrix}5&0&0\\0&-1&0\\0&0&2\end{bmatrix}}$ Note that 'diagonal' refers to the elements Aij where i=j.
+- **Identity Matrices:** These are diagonal matrices where all the diagonal elements are '1'. For e.g. this is a 3 x 3 identity matrix: ${A=\begin{bmatrix}1&0&0\\0&1&0\\0&0&1\end{bmatrix}}$
 
 #### Matrices Refresher
 

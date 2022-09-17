@@ -35,9 +35,7 @@ Bivariate age bodyweight
 Using this new information, you can build a better predictive model that considers age to predict body weight. Various models can be used here, but let’s start with using a linear model that follows a straight line. This is a regression task since the bodyweight i.e. output variable is numerical. 
 
 The model can be given as:
-
-                                                            $y=mx+c$
-
+$$\large y=mx+c$$
 Here, 'm' is the slope, and 'c' is the intercept of the line. 'x' and 'y' are input and output of the model, respectively.
 
 ![Bodyweight vs age graph](https://i.ibb.co/ySZ7dSs/Bodyweight-vs-age-graph.png)

@@ -40,7 +40,22 @@ Now let's use the same and create a Decision Tree for Coronavirus case-study. In
 
 In the video above, Sajan has used the Coronavirus case-study to show how a decision tree can be created. The table of observations for the same set of data is shown below:
 
-![Coronavirus Case-Study Table](https://i.ibb.co/VC2499m/Coronavirus-Case-Study-Table.png)
+| Sl. No. | Symptoms          | International Travel | Interaction with infected person | Corona Test Result |
+|---------|-------------------|----------------------|----------------------------------|--------------------|
+| 1       | Fever             | More than 14 days    | Without mask                     | No                 |
+| 2       | Fever             | More than 14 days    | With mask                        | No                 |
+| 3       | Breathing Problem | More than 14 days    | Without mask                     | Yes                |
+| 4       | Cough             | More than 14 days    | Without mask                     | Yes                |
+| 5       | Cough             | Less than 14 days    | Without mask                     | Yes                |
+| 6       | Cough             | Less than 14 days    | With mask                        | No                 |
+| 7       | Breathing Problem | Less than 14 days    | With mask                        | Yes                |
+| 8       | Fever             | More than 14 days    | Without mask                     | No                 |
+| 9       | Fever             | Less than 14 days    | Without mask                     | Yes                |
+| 10      | Cough             | Less than 14 days    | Without mask                     | Yes                |
+| 11      | Fever             | Less than 14 days    | With mask                        | Yes                |
+| 12      | Breathing Problem | More than 14 days    | With mask                        | Yes                |
+| 13      | Breathing Problem | Less than 14 days    | Without mask                     | Yes                |
+| 14      | Cough             | More than 14 days    | With mask                        | No                 |
 
 Let us stepwise analyse the process and create a Decision Tree to find out whether or not a person has coronavirus or not.
 
@@ -51,7 +66,11 @@ Let us stepwise analyse the process and create a Decision Tree to find out wheth
          
 -   For feature= ‘Symptoms’ this can be done easily using the table below:
 
-![https://i.ibb.co/Z6jd1pb/Coronavirus-Case-Study-Symptoms-1.png](https://i.ibb.co/Z6jd1pb/Coronavirus-Case-Study-Symptoms-1.png)
+| Feature  | Test      | Yes | No | Total |
+|----------|-----------|-----|----|-------|
+| Symptoms | Fever     | 2   | 3  | 5     |
+| Symptoms | Breathing | 4   | 0  | 4     |
+| Symptoms | Cough     | 3   | 2  | 5     |
 
 -   Now, calculate the entropy for each feature. Note that here, you are considering that the split is happening 3 ways, i.e 'Symptoms' splits into Fever, Breathing and Cough.
     -   Entropy for “Fever” = 0.97
@@ -83,7 +102,13 @@ Let us stepwise analyse the process and create a Decision Tree to find out wheth
 
 -   Now for Cough, we'll get the data points as shown in the following table:
 
-![Coronavirus Case-Study Symptoms 6](https://i.ibb.co/YXPN0sC/Coronavirus-Case-Study-Symptoms-6.png)
+|       |                   |              |     |
+|-------|-------------------|--------------|-----|
+| Cough | More than 14 days | Without mask | Yes |
+| Cough | Less than 14 days | Without mask | Yes |
+| Cough | Less than 14 days | With mask    | No  |
+| Cough | Less than 14 days | Without mask | Yes |
+| Cough | More than 14 days | With mask    | No  |
 
 -   Information Gain(Cough, International Travel) can be calculated as follows:
     -   P(less than 14 days)= 3/5, P(more than 14 days)= 2/5
@@ -146,7 +171,10 @@ In the above tree, if you have observed closely, we have split the tree 3 ways a
 
 Qn: In order to perform the binary split, you are grouping "Fever" and "Cough". From the table given below, calculate the revised information gain for "Symptoms".
 
-![Coronavirus Case-Study Symptoms 5](https://i.ibb.co/fHLxcyc/Coronavirus-Case-Study-Symptoms-5.png)
+| Feature  | Test          | Yes | No |
+|----------|---------------|-----|----|
+| Symptoms | Fever + Cough | 5   | 5  |
+| Symptoms | Breathing     | 4   | 0  |
 
 - 0.25
 

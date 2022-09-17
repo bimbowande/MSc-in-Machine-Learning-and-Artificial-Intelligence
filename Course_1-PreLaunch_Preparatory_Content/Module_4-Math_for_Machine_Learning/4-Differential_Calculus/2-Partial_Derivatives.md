@@ -10,22 +10,54 @@ To get a basic understanding of partial derivatives, watch [this video on partia
 
 Consider the following example: the volume V of a cone depends on the cone's height h and its radius r according to the following equation:
 
-which represents the rate at which the cone's volume changes with its radius *while the height is kept constant*. The italicised part of the previous sentence is very important - while computing a partial derivative, all other variables of the function are kept constant. ![Diff-13](https://i.ibb.co/R2XL4vd/Diff-13.png) Similarly, the partial derivative with respect to the height h equals: ![Diff-14](https://i.ibb.co/GWS7Y8D/Diff-14.png) This rate represents how the volume of a cone (of a constant radius r) changes as you change the height.
+which represents the rate at which the cone's volume changes with its radius *while the height is kept constant*. The italicised part of the previous sentence is very important - while computing a partial derivative, all other variables of the function are kept constant. 
+$$\large{V(r, h)=\dfrac{\pi\\r^2h}{3}}$$
+The partial derivative of $V$ with respect to $r$ is:
+$$\large{\dfrac{\delta\\V}{\delta\\r}=\dfrac{2\pi\\r^2h}{3}}$$
+Similarly, the partial derivative with respect to the height $h$ equals:
+$$\large{\dfrac{\delta\\V}{\delta\\h}=\dfrac{2\pi\\rh}{3}}$$
+This rate represents how the volume of a cone (of a constant radius $r$) changes as you change the height.
 
 #### Partial Differentiation
 
-Qn: ![Diff-15](https://i.ibb.co/VNKph7w/Diff-15.png)
+Qn: For the function $f(x, y)=sin(xy)+3xy$, find the value of $\dfrac{\delta\\f}{\delta\\x}$ and $\dfrac{\delta\\f}{\delta\\y}$ 
 
-Ans:  
-![Diff-16](https://i.ibb.co/9sTf7KZ/Diff-16.png)  
-![Diff-17](https://i.ibb.co/Wg8yqt5/Diff-17.png)
+- $\dfrac{\delta}{\delta\\x}f(x, y)=y\cos(xy)+3y$ and $\dfrac{\delta}{\delta\\x}f(x, y)=x\cos(xy)+3x$
 
-Qn: ![Diff-18](https://i.ibb.co/61znQ2z/Diff-18.png)
+- $\dfrac{\delta}{\delta\\x}f(x, y)=y\cos(xy)+3$ and $\dfrac{\delta}{\delta\\x}f(x, y)=x\cos(xy)+3$
 
-Ans: ![Diff-19](https://i.ibb.co/cgGSv25/Diff-19.png)
+- $\dfrac{\delta}{\delta\\x}f(x, y)=y\cos(x)+3y$ and $\dfrac{\delta}{\delta\\x}f(x, y)=x\cos(y)+3x$
 
-Qn: ![Diff-20](https://i.ibb.co/QXDdWqY/Diff-20.png)
-Ans: ![Diff-21](https://i.ibb.co/2ZhVbL2/Diff-21.png) ![Diff-22](https://i.ibb.co/QCpvWj3/Diff-22.png)
+- $\dfrac{\delta}{\delta\\x}f(x, y)=cos(xy)+3y$ and $\dfrac{\delta}{\delta\\x}f(x, y)=cos(xy)+3x$
+
+Ans:  A. 
+$$\large{\dfrac{\delta}{\delta\\x}f(x, y)=f_y(x, y)=\dfrac{\delta}{\delta\\x}(sin(xy)+3xy)=cos(xy)\dfrac{\delta}{\delta\\x}+3y=y\cos(xy)+3y}$$
+and
+$$\large{\dfrac{\delta}{\delta\\x}f(x, y)=f_x(x, y)=\dfrac{\delta}{\delta\\y}(sin(xy)+3xy)=cos(xy)\dfrac{\delta}{\delta\\y}+3x=x\cos(xy)+3x}$$
+
+Qn: For the function $f(x, y)=xy\ln(xy)$, find the value of $\dfrac{\delta\\f}{\delta\\x}$ and $\dfrac{\delta\\f}{\delta\\y}$ 
+
+- $y\ ln(xy)+y$ and $x\ ln(xy)+x$ respectively.
+
+- $ln(xy)+y$ and $ln(xy)+x$ respectively.
+
+- $y\ ln(xy)$ and $x\ ln(xy)$ respectively.
+
+- None of these
+
+Ans: A.
+
+Qn: $f(x, y, z)=x^2y+y^2z+x^2x$, what are $\dfrac{\delta\\f}{\delta\\x}$, $\dfrac{\delta\\f}{\delta\\y}$ and $\dfrac{\delta\\f}{\delta\\z}$ at $(1, 1, 1)$?
+
+- $\dfrac{\delta\\f}{\delta\\x}=1$, $\dfrac{\delta\\f}{\delta\\y}=1$ and $\dfrac{\delta\\f}{\delta\\z}=1$
+
+- $\dfrac{\delta\\f}{\delta\\x}=0$, $\dfrac{\delta\\f}{\delta\\y}=0$ and $\dfrac{\delta\\f}{\delta\\z}=0$
+
+- $\dfrac{\delta\\f}{\delta\\x}=3$, $\dfrac{\delta\\f}{\delta\\y}=3$ and $\dfrac{\delta\\f}{\delta\\z}=3$
+
+- $\dfrac{\delta\\f}{\delta\\x}=2$, $\dfrac{\delta\\f}{\delta\\y}=2$ and $\dfrac{\delta\\f}{\delta\\z}=2$
+
+Ans: C. *$\dfrac{\delta\\f}{\delta\\x}=z^2+2xy$, $\dfrac{\delta\\f}{\delta\\y}=x^2+2yz$ and $\dfrac{\delta\\f}{\delta\\z}=y^2+2zx$ and substituting the values $(1, 1, 1)$ we'll get the values $(3, 3, 3)$*
 
 ## **Total Derivatives**
 
@@ -37,21 +69,34 @@ In such cases, we cannot assume that x and y are independent (because they now d
 
 To get the basic understanding of total derivative, watch this video on [Multivariable chain rule](https://www.youtube.com/watch?v=NO3AqAaAE6o) by Khan Academy.
 
-Thus, total derivatives are somewhat analogous to the rate of change of a function with respect to all its variables. Consider the function f(x,y,z) where x,y,z are functions of t . By using chain rule we can write the formula for the 'total derivative' as : ![Diff-23](https://i.ibb.co/3SL5h0D/Diff-23.png)
+Thus, total derivatives are somewhat analogous to the rate of change of a function with respect to all its variables. Consider the function f(x,y,z) where x,y,z are functions of t . By using chain rule we can write the formula for the 'total derivative' as :
+$$\large{\dfrac{\delta\\f}{\delta\\t}=\dfrac{\delta\\f}{\delta\\x}*\dfrac{\delta\\x}{\delta\\t}+\dfrac{\delta\\f}{\delta\\y}*\dfrac{\delta\\y}{\delta\\t}+\dfrac{\delta\\f}{\delta\\z}*\dfrac{\delta\\z}{\delta\\t}}$$
 
 ## Example
 
-Let's take an example problem which can be easily solved using total derivatives. Suppose that the radius and height of a cone are both 2 cm at some time t. The radius is decreasing at the rate of 1 cm/s and the height is increasing at the rate of 2 cm/s. What is the change in volume with respect to time at an instant t?
+Let's take an example problem which can be easily solved using total derivatives. Suppose that the radius and height of a cone are both 2 cm at some time t. The radius is decreasing at the rate of 1 cm/s and the height is increasing at the rate of 2 cm/s. What is the change in volume with respect to time at an instant $t$?
 
 We know that the volume of the cone is:
-
-V=13πr2h
-
+$$\large{V=\dfrac{1}{3}\pi\\r^2h}$$
 Also, we are given that the radius is decreasing at the rate of 1 cm/s and the height is increasing at the rate of 2 cm/s. In other words, drdt=−1 cm/s and dhdt=2 cm/s respectively.
 
-By using the total derivative formula, we can calculate the rate of change of volume with respect to time: ![Diff-24](https://i.ibb.co/db0mcVs/Diff-24.png) Hence, we can say that the volume of the cone is not changing at this time point t.
+By using the total derivative formula, we can calculate the rate of change of volume with respect to time:
+$$\large{\dfrac{\delta\\V}{\delta\\t}=\dfrac{\delta\\V}{\delta\\r}*\dfrac{dr}{dt}+\dfrac{\delta\\V}{\delta\\h}*\dfrac{dh}{dt}}=\dfrac{2}{3}\pi\\rh*\dfrac{dr}{dt}+\dfrac{1}{3}\pi\\r^2*\dfrac{dh}{dt}$$
+$$\large{=\dfrac{2}{3}\pi(2)(2)*(-1)+\dfrac{1}{3}\pi(2)^2*(2)=-\dfrac{8}{3}\pi+\dfrac{8}{3}\pi=0}$$
+Hence, we can say that the volume of the cone is not changing at this time point t.
 
 #### Total Derivative
 
-Qn: Recall the formula for the total derivative, that is, for f(x,y),x=x(t) and y=y(t): ![Diff-25](https://i.ibb.co/3TSShdh/Diff-25.png) Given that f(x,y)=π2x2y, x(t)=t2+1 and y(t)=t2−1, calculate the total derivative df/dt.  
-Ans: ![Diff-26](https://i.ibb.co/10syB3r/Diff-26.png) ![Diff-27](https://i.ibb.co/h8d9bmW/Diff-27.png)
+Qn: Recall the formula for the total derivative, that is, for $f(x, y), x=x(t)$ and $y=y(t)$:
+$$\dfrac{\delta\\f}{\delta\\t}=\dfrac{\delta\\f}{\delta\\t}\dfrac{dx}{dt}+\dfrac{\delta\\f}{\delta\\t}*\dfrac{dy}{dt}$$
+Given that $f(x, y)=\pi^2x^2y$, $x(t)=t^2+1$ and $y(t)=t2−1$, calculate the total derivative $\dfrac{df}{dt}$.
+
+- $\dfrac{df}{dt}=2\pi(t^2+1)2(t^2-1)+\pi(t^2+1)2(t^2-1)$
+
+- $\dfrac{df}{dt}=4\pi^2t(t^2+1)(t^2-1)+2\pi^2t(t^2+1)^2$
+
+- $\dfrac{df}{dt}=8\pi^2t(t^2+1)(t^2-1)$
+
+- $\dfrac{df}{dt}=8\pi\\t(t^2+1)2(t^2-1)+2\pi\\t(t^2+1)^2$
+
+Ans: B. 

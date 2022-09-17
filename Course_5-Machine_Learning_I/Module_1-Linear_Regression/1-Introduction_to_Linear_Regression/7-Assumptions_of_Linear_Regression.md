@@ -7,9 +7,9 @@ Let’s find the answer to this in the next video.
 **VIDEO**
 Let's understand the importance of each assumption one by one.
 
-There should be a linear relationship between X and Y:
+There should be a linear relationship between $X$ and $Y$:
 
--   X and Y should display some sort of a linear relationship; otherwise, fitting a linear model between them is of no use.
+-   $X$ and $Y$ should display some sort of a linear relationship; otherwise, fitting a linear model between them is of no use.
 
 ![Assumptions Graph 1](https://i.ibb.co/Yp1ysDV/Assumptions-Graph-1.jpg)
 
@@ -73,7 +73,7 @@ Which of the assumptions of linear regression is the following image shown to be
 
 ![Assumptions Graph 5](https://i.ibb.co/7W4ZSLV/Assumptions-Graph-5.jpg)
 
-- The linear relationship between X and y
+- The linear relationship between $X$ and $y$
 
 - Error terms being independent of each other
 
@@ -81,7 +81,7 @@ Which of the assumptions of linear regression is the following image shown to be
 
 - Error terms having a constant variance
 
-Ans: D. *As is evident from the graph, the error terms seem to be reduced with an increase in the value of X. This is clearly a violation of the assumption that the error terms have constant variance.*
+Ans: D. *As is evident from the graph, the error terms seem to be reduced with an increase in the value of $X$. This is clearly a violation of the assumption that the error terms have constant variance.*
 
 In the next segment, let's see how the linear regression model performs on unseen data.
 

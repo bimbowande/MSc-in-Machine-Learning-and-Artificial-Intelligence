@@ -10,7 +10,14 @@ As you saw in this video, a financial institution lends home loans to its custom
 
 Based on its experience, the institution knows that the mean household annual income (INC) is essential for determining the likelihood of loan repayment. It collects data on six customers. The variable Defaulter contains values 0 and 1 based on whether the person will repay the loan amount on time or not, respectively. In the upcoming sessions, you will learn how to solve this problem using classification.
 
-![Income vs Defaulter](https://i.ibb.co/P4JyKtQ/Income-vs-Defaulter.png)
+| Income (LPA ₹) | Defaulter |
+|:--------------:|:---------:|
+|       3.5      |     1     |
+|       5.6      |     0     |
+|      13.9      |     0     |
+|       8.4      |     1     |
+|       9.5      |     0     |
+|       8.1      |     0     |
 
 #### Classification
 
@@ -33,13 +40,29 @@ Another example will be if a health organisation wants to understand whether an 
 
 The company records data on six patients and wants to predict whether a COVID-19-positive patient will be hospitalised or not based on their age and SBP. Here, age and SBP can be treated as independent variables for the problem.
 
-![Hospitalisation](https://i.ibb.co/Sr9PYxq/Hospitalisation.png)
+| Age (years) | SBP (Hgmm) | HOSP |
+|:-----------:|:----------:|:----:|
+|      67     |     140    |   1  |
+|      55     |     132    |   0  |
+|      45     |     152    |   1  |
+|      29     |     119    |   0  |
+|      39     |     145    |   0  |
+|      54     |     125    |   1  |
 
 Similarly, an online food ordering and delivery company want to understand if the time taken for delivering food affects their customer rating. The company wants to ensure that any delays are communicated well in advance and that the customer sentiments are not impacted. In this manner, the company works on building customer satisfaction and prevents its customers from churning.
 
-Considering the delivery time as the predictor variable, is it possible to predict the rating that a customer might give (poor, average, or good)
+Considering the delivery time as the predictor variable, is it possible to predict the rating that a customer might give (poor, average, or good
 
-![Customer Rating](https://i.ibb.co/vvtS2NF/Customer-Rating.png)
+| Time (min) | Customer's Rating |
+|:----------:|:-----------------:|
+|     23     |        Good       |
+|     56     |      Average      |
+|     38     |      Average      |
+|     32     |        Good       |
+|     78     |      Average      |
+|     90     |        Poor       |
+|     72     |      Average      |
+|     30     |        Poor       |
 
 In all three examples, the main objective is to classify the observations into different categories based on certain predictor variables. Can you apply regression models to solve such types of problems? If not, what are the possible reasons for the same?
 
