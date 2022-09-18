@@ -136,6 +136,8 @@ Content accross the course in different courses and modules are mostly .md and .
     - [Hierarchical Clustering and Case Study](Course_6-Machine_Learning_II/Module_5-Clustering/3-Hierarchical_Clustering_and_Case_Study)
     - [Clustering Using PySpark](Course_6-Machine_Learning_II/Module_5-Clustering/4-Clustering_Using_PySpark)
     - [DBSCAN and Other Forms of Clustering](Course_6-Machine_Learning_II/Module_5-Clustering/5-DBSCAN_and_Other_Forms_of_Clustering)
+- [Course 7 - Deep Learning](Course_7-Deep_Learning)
+  - [Module 1 - Introduction to Neural Nets with TensorFlow](Course_7-Deep_Learning/Module_1-Introduction_to_Neural_Nets_with_TensorFlow)
 - [Docs](Docs)
   - [Amazon Web Services](Docs/AWS)
   - [Course Overview](Docs/Course_Overview)
