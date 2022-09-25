@@ -21,7 +21,7 @@ In the next video, you will learn how to perform feedforward for an entire batch
 **VIDEO**
 
 In the above video, you saw how to use matrices to implement the vectorised feedforward algorithm. Let us understand it in more depth by considering a batch B to show a vectorized implementation that consists of m data points stacked side by side, which is represented as follows.
-$$B=\begin{bmatrix}|&|&|&|&|\\x_i&x_{i+1}&.&.&x_{i+m-1}\\|&|&|&|&|\end{bmatrix}$$
+$$\large{B=\begin{bmatrix}|&|&|&|&|\\x_i&x_{i+1}&.&.&x_{i+m-1}\\|&|&|&|&|\end{bmatrix}}$$
 All data points $x_i,~x_{i+1}$ etc. are d-dimensional vectors, i.e. every input vector has d numerical features. Each data point is a **column vector** in the matrix B.
 
 #### B Dimension

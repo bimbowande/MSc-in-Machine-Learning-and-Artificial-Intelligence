@@ -36,9 +36,7 @@ Qn: Consider a neural network with five hidden layers. You send in an input batc
 
 Ans: B. *$W^l$ is the weight matrix between the layers l and l-1.*
 
-Qn: Consider a neural network with five hidden layers. You send in an input batch of 20 data points. The weight matrix W3 has the dimension (18, 12). How many neurons are present in the hidden layer 2?
-
-Note: For all the questions, you will not be taking into account the transpose of weight matrix as mentioned earlier. The formula used will be z=w.x+b.
+Qn: Consider a neural network with five hidden layers. You send in an input batch of 20 data points. The weight matrix $W^3$ has the dimension (18, 12). How many neurons are present in the hidden layer 2? Note: For all the questions, you will not be taking into account the transpose of weight matrix as mentioned earlier. The formula used will be z=w.x+b.
 
 - 18
 
