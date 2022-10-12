@@ -148,6 +148,7 @@ Content accross the course in different courses and modules are mostly .md and .
     - [Fundamentals of CNN](Course_7-Deep_Learning/Module_2-Convolutional_Neural_Network/2-Fundamentals_of_CNN)
     - [Building CNNs Using TensorFlow](Course_7-Deep_Learning/Module_2-Convolutional_Neural_Network/3-Building_CNNs_Using_TensorFlow)
     - [CNN Architectures and Transfer Learning](Course_7-Deep_Learning/Module_2-Convolutional_Neural_Network/4-CNN_Architectures_and_Transfer_Learning)
+  - [Melanoma Detection Case Study](Melanoma_Detection)
 - [Docs](Docs)
   - [Amazon Web Services](Docs/AWS)
   - [Course Overview](Docs/Course_Overview)
