@@ -47,6 +47,6 @@ Qn: Which of the following statements is correct about the sigmoid function in t
 
 - Higher value of sigmoid will mean that lesser amount of memory will be erased from the previous hidden state.
 
-Ans: 
+Ans: C. *The closer the value of sigmoid is to 0, the more memory will be discarded from the previous cell state. You'll learn this in detail in the next segment.*
 
 You have gotten an intuition of the gates. We'll dive deeper into the functionality and the equations in the next segment.
