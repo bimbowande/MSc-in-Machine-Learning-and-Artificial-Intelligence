@@ -153,6 +153,7 @@ Content accross the course in different courses and modules are mostly .md and .
     - [Basics of RNN](Course_7-Deep_Learning/Module_3-Recurrent_Neural_Networks/1-Basics_of_RNN)
     - [Variants of RNN](Course_7-Deep_Learning/Module_3-Recurrent_Neural_Networks/2-Variants_of_RNN)
     - [RNN Case Study](Course_7-Deep_Learning/Module_3-Recurrent_Neural_Networks/3-RNN_Case_Study)
+    - [Backpropagation in RNN](Course_7-Deep_Learning/Module_3-Recurrent_Neural_Networks/4-Backpropagation_in_RNN)
 - [Docs](Docs)
   - [Amazon Web Services](Docs/AWS)
   - [Course Overview](Docs/Course_Overview)
