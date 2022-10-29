@@ -142,4 +142,3 @@ Qn: When you use spaCy to perform PoS tagging, which token attributes can be use
 - `.tag`
 
 Ans: A & B. *In spaCy, `.pos_` reveals the PoS attributes of a token object. In spaCy, `.tag_` reveals the PoS tag attributes of a token object.*
-
