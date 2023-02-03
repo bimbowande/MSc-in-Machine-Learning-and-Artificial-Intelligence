@@ -197,9 +197,9 @@ Content accross the course in different courses and modules are mostly .md and .
   - [Module 1 - Mid Submission](Course_10-Capstone/Module_1-Mid_Submission)
   - [Module 2 - Final Submission](Course_10-Capstone/Module_2-Final_Submission)
 - [Docs](Docs)
-  - [Amazon Web Services](Docs/AWS)
+  - [Amazon Web Services](Docs/Amazon_Web_Services)
   - [Course Overview](Docs/Course_Overview)
-  - [Instalation Guides](Docs/Instalation_Guides)
+  - [Instalation Guides](Docs/Installation_Guides)
 
 ## Programing Languages and Tools covered
 
